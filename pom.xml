@@ -36,7 +36,7 @@
 
         <spring.version>4.2.5.RELEASE</spring.version>
         <mybatis.version>3.3.1</mybatis.version>
-        <mybatis-spring.version>1.2.4</mybatis-spring.version>
+        <mybatis-spring.version>1.3.0</mybatis-spring.version>
 
 
         <!--下面这两个是springAOP需要用到-->
@@ -104,6 +104,11 @@
 
         <!--指定Maven用什么编码来呈现站点的HTML文件-->
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!-- profiles -->
+        <multiproject.basedir>../</multiproject.basedir>
+        <profiles.path>src/profiles</profiles.path>
+        <profiles.dir>${multiproject.basedir}/${profiles.path}</profiles.dir>
 
     </properties>
     <!--版本变量设置 end-->
@@ -362,6 +367,8 @@
 
     <build>
         <finalName>${project.artifactId}</finalName>
+
+
         <pluginManagement>
             <plugins>
                 <!-- Compiler 插件, 设定JDK版本 -->
