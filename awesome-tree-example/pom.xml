@@ -14,6 +14,7 @@
 
     <modules>
         <module>multi-module-ssm-example</module>
+        <module>kafka-demo</module>
     </modules>
 
 
