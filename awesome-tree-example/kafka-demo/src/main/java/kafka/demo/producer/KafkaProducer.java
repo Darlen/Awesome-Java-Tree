@@ -18,13 +18,14 @@ import java.util.Properties;
  */
 public class KafkaProducer {
     private final Producer<String, String> producer;
-    public final static String TOPIC = "jdy.application.betaD";
+//    public final static String TOPIC = "jdy.application.betaD";
+    public final static String TOPIC = "tree";
 
     private KafkaProducer() {
         Properties props = new Properties();
         // 此处配置的是kafka的端口
-//        props.put("metadata.broker.list", "127.0.0.1:9092");
-        props.put("metadata.broker.list", "192.168.49.206:9092,192.168.49.205:9092,192.168.49.204:9092");
+        props.put("metadata.broker.list", "127.0.0.1:9092");
+//        props.put("metadata.broker.list", "192.168.49.206:9092,192.168.49.205:9092,192.168.49.204:9092");
 //        props.put("zk.connect", "192.168.49.204:2181");
 //        props.put("zookeeper.connect", "192.168.49.204:2181");
 

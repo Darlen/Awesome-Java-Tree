@@ -15,6 +15,8 @@
     <modules>
         <module>multi-module-ssm-example</module>
         <module>kafka-demo</module>
+        <module>spring-kafka-demo</module>
+        <module>spring-redis-demo</module>
     </modules>
 
 
