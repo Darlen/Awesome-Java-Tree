@@ -34,3 +34,10 @@
 	</bean>
 ```
 ### 3. 实现RedisUtils<a>RedisUtils</a>的帮助类
+
+
+### 参考：
+#### 1. http://blog.csdn.net/java2000_wl/article/details/8543203/
+#### 2. https://www.ibm.com/developerworks/cn/java/os-springredis/
+#### 3. 官网：http://projects.spring.io/spring-data-redis/#quick-start
+#### 4. [SpringAOP与Redis搭建缓存](http://www.cnblogs.com/mrlinfeng/p/5857775.html)
