@@ -52,7 +52,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!--mybatis 包-->
+        <!--mapper 包-->
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>

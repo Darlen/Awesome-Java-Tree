@@ -61,19 +61,25 @@
         <commons-lang3.version>3.3.2</commons-lang3.version>
         <commons-email.version>1.3.2</commons-email.version>
         <commons-beanutils.version>1.9.2</commons-beanutils.version>
+        <http-component-core.version>4.3.2</http-component-core.version>
+        <http-component-client.version>4.5.3</http-component-client.version>
 
         <httpclient.version>4.3.3</httpclient.version>
         <jackson-databind.version>2.4.2</jackson-databind.version>
+        <jackson-mapper.version>1.9.13</jackson-mapper.version>
         <fastjson.version>1.1.43</fastjson.version>
+        <json-lib.version>2.4</json-lib.version>
 
         <jedis.version>2.8.0</jedis.version>
         <!--架包版本变量 end-->
+
+        <xstream.version>1.4.9</xstream.version>
 
 
         <!--插件版本变量 start-->
         <tomcat6-maven-plugin.version>2.1</tomcat6-maven-plugin.version>
         <tomcat7-maven-plugin.version>2.2</tomcat7-maven-plugin.version>
-        <jetty-plugin.version>8.1.16.v20140903</jetty-plugin.version>
+        <!--<jetty-plugersion>8.1.16.v20140903</jetty-plugin.version>-->
 
         <maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
         <maven-war-plugin.version>2.3</maven-war-plugin.version>
@@ -337,6 +343,12 @@
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
             </dependency>
+            <dependency>
+                <groupId>net.sf.json-lib</groupId>
+                <artifactId>json-lib</artifactId>
+                <version>${json-lib.version}</version>
+                <classifier>jdk15</classifier>
+            </dependency>
             <!--JSON处理 end-->
 
             <!-- 上传组件包 -->
@@ -351,6 +363,16 @@
                 <artifactId>commons-io</artifactId>
                 <version>${commons-io.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpcore</artifactId>
+                <version>${http-component-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${http-component-client.version}</version>
+            </dependency>
 
 
             <!--apache工具包-->
@@ -358,6 +380,13 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3.version}</version>
+            </dependency>
+
+            <!--XML处理文件-->
+            <dependency>
+                <groupId>com.thoughtworks.xstream</groupId>
+                <artifactId>xstream</artifactId>
+                <version>${xstream.version}</version>
             </dependency>
 
 
