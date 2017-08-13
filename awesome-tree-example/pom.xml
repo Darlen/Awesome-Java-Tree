@@ -17,6 +17,7 @@
         <module>kafka-demo</module>
         <module>spring-kafka-demo</module>
         <module>spring-redis-demo</module>
+        <module>spring-quartz-demo</module>
     </modules>
 
 
